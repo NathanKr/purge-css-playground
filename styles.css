@@ -1,0 +1,12 @@
+body div {
+    color: red;
+  }
+  
+  body p{
+      color: blue;
+  }
+
+  /* this is not used in html and should be removed by purgecss */
+  body h1{
+    color: blue;
+}
