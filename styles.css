@@ -8,5 +8,5 @@ body div {
 
   /* this is not used in html and should be removed by purgecss */
   body h1{
-    color: blue;
+    color: orange;
 }

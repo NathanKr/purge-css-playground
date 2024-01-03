@@ -5,12 +5,18 @@
   "main": "postcss.config.js",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@types/node": "^20.10.6",
     "postcss": "^8.4.32",
-    "postcss-cli": "^11.0.0"
+    "postcss-cli": "^11.0.0",
+    "purgecss": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   },
   "scripts": {
     "build-css": "postcss styles.css -d dist",
-    "build-css-watch": "postcss styles.css -d dist -w"
+    "build-css-watch": "postcss styles.css -d dist -w",
+    "build-css-with-purgecss-api": "ts-node scripts/use-purgecss-api.ts",
+    "build-css-with-purgecss-cli": "purgecss --css ./styles.css --content ./index.html --output ./dist"
   },
   "repository": {
     "type": "git",
